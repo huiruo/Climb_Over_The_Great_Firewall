@@ -42,19 +42,19 @@ https://github.com/shadowsocks/shadowsocks-windows/releases
     "http_proxy": false,         //代理
     "auth": false                //需要验
 }
-```
 
-### windows 运行shadowsocks 服务端
+windows 运行shadowsocks 服务端
 在终端运行：
 ```
 shadowsocks-libqss.exe -c config.json -S
 ```
+```
 
 
-### ubuntu shadowsocks 客户端配置
-配置参考：
+### ubuntu shadowsocks 客户端配置实现科学上网
+配置完成记得开启全局代理，配置参考：
 https://shadowsockshelp.github.io/Shadowsocks/linux.html
-
+或则 参考下面Windows shadowsocks配置
 ···
 安装客户端
 右键单击 “Shadowsocks-Qt5-x.x.x-x86_64.AppImage” > 选择 “Properties” > 单击 “Permissions” > 在”Allow excuting file as program” 上打勾。
@@ -67,3 +67,11 @@ ubuntu 设置全局代理：
 http: 127.0.0.1 1080
 https: 127.0.0.1 1080
 ···
+
+## windows客户端配置实现科学上网：
+配置比较简单,gui 操作，把服务器ip，和端口，加密方式填入，点击全局代理即可,此时发送的请求将经过公网转发，最后到达window处理。
+```
+https://github.com/shadowsocks/shadowsocks-windows/releases
+
+下载 Shadowsocks-4.4.0.185.zip
+```
