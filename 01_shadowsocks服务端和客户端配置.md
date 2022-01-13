@@ -1,4 +1,7 @@
 # shadowsocks 
+```
+Shadowsocks 的原理：它发出的 TCP 包，没有明显包特征，可以通过GFW 审查。
+```
 官网：
 https://shadowsocks.org/en/download/clients.html
 
@@ -42,16 +45,16 @@ https://github.com/shadowsocks/shadowsocks-windows/releases
     "http_proxy": false,         //代理
     "auth": false                //需要验
 }
+```
 
 windows 运行shadowsocks 服务端
 在终端运行：
 ```
 shadowsocks-libqss.exe -c config.json -S
 ```
-```
-
 
 ### ubuntu shadowsocks 客户端配置实现科学上网
+<br>
 配置完成记得开启全局代理，配置参考：
 https://shadowsockshelp.github.io/Shadowsocks/linux.html
 或则 参考下面Windows shadowsocks配置
@@ -74,4 +77,11 @@ https: 127.0.0.1 1080
 https://github.com/shadowsocks/shadowsocks-windows/releases
 
 下载 Shadowsocks-4.4.0.185.zip
+```
+
+## 参考文档：
+<br>
+```
+1.frp + shadowsocks强强组合，内网穿透访问局域网其他主机
+https://www.codeleading.com/article/8495900005/
 ```

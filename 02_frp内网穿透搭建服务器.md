@@ -1,9 +1,13 @@
 
 ## frp介绍：
 ```
-frp:Fast Reverse Proxy
+frp:Fast Reverse Proxy。frp 是一个可用于内网穿透的高性能的反向代理应用只做转发服务,支持 tcp, udp 协议，为 http 和 https 应用协议提供了额外的能力，且尝试性支持了点对点穿透。
+
 内网穿透:将内网服务暴露给外网访问
 ```
+官方文档：
+https://gofrp.org/docs/examples/
+
 ### 客户端frpc的配置，c就是client
 ```
 在frp服务内网穿透中，有两种角色：
@@ -77,4 +81,10 @@ systemctl status frps.service
 
 公网ip:9980
 这个时候，外网就可以通过frp服务器的自定义端口9980，访问到内网的win10机器上的9999了。
+```
+
+## 参考文档
+```
+1.翻墙正确的姿势 frp逆向网络通信实现反长城检测翻墙
+https://github.com/CreditTone/FuckingWallOfChina
 ```
